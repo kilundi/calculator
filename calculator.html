@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="my-frame">
+        <p class="displayCalculation"></p>
+
+        <div class="buttons">
+
+
+            <p>
+                <button class="toAllButtons numberButtons" onclick="updateCalculation('1');">1</button>
+                <!-- ^^^ 5p ^^^ -->
+                <button class="toAllButtons numberButtons" onclick="
+        updateCalculation('2');">2</button>
+                <button class="toAllButtons numberButtons" onclick="
+        updateCalculation('3');">3</button>
+                <button class="toAllButtons signButtons" onclick="
+        updateCalculation(' + ');">+</button>
+            </p>
+
+            <p>
+                <button class="toAllButtons numberButtons" onclick="
+           updateCalculation('4');
+        ">4</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+             updateCalculation('5');
+        ">5</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+            updateCalculation('6');
+        ">6</button>
+
+                <button class="toAllButtons signButtons" onclick="
+            updateCalculation(' - ');
+        "> - </button>
+            </p>
+
+            <p>
+                <button class="toAllButtons numberButtons" onclick="
+            updateCalculation('7');
+        ">7</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+            updateCalculation('8');
+        ">8</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+            updateCalculation('9');
+        ">9</button>
+
+                <button class="toAllButtons signButtons" onclick="
+            updateCalculation(' * ');
+        ">*</button>
+            </p>
+
+            <p>
+                <button class="toAllButtons numberButtons" onclick="
+           updateCalculation('0');
+        ">0</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+            updateCalculation('.');
+        ">.</button>
+
+                <button class="toAllButtons numberButtons" onclick="
+            calculation = eval(calculation);
+             jsCalculation();
+            localStorage.setItem('calculatorResult', calculation );
+         ">=</button>
+
+                <button class="toAllButtons signButtons" onclick="
+            updateCalculation(' / ');
+        ">/</button>
+            </p>
+            <p>
+                <button class="toAllButtons numberButtons" onclick="
+            calculation = '';
+             jsCalculation();
+            localStorage.setItem('calculatorResult', calculation);
+        ">clear</button>
+            </p>
+        </div>
+    </div>
+
+    <script src=" lesson5.3.js"></script>
+</body>
+
+</html>
